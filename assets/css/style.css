@@ -485,7 +485,6 @@ h1, h2, h3, h4, h5 {
   border-radius: 12px;
   padding: 28px;
   transition: all 0.25s;
-  height: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -561,7 +560,6 @@ h1, h2, h3, h4, h5 {
   background: var(--light);
   border-radius: 12px;
   padding: 30px;
-  height: 100%;
   border-left: 4px solid var(--gold);
   transition: all 0.2s;
 }
@@ -636,7 +634,6 @@ h1, h2, h3, h4, h5 {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 26px;
-  height: 100%;
   transition: all 0.25s;
 }
 
@@ -842,7 +839,7 @@ h1, h2, h3, h4, h5 {
 /* ===== CTA BANNER ===== */
 .cta-banner {
   background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%);
-  padding: 70px 0;
+  padding: 55px 0;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -873,7 +870,7 @@ h1, h2, h3, h4, h5 {
 /* ===== FORM ===== */
 .form-section {
   background: var(--light);
-  padding: 80px 0;
+  padding: 65px 0;
 }
 
 .form-card {
@@ -910,6 +907,9 @@ h1, h2, h3, h4, h5 {
 }
 
 .form-card .form-control::placeholder { color: #aaa; }
+.form-card textarea {
+  resize: none;
+}
 
 .btn-submit {
   background: var(--gold);
@@ -1448,7 +1448,6 @@ h1, h2, h3, h4, h5 {
   border-radius: 10px;
   padding: 22px;
   text-align: center;
-  height: 100%;
 }
 
 .value-prop-card .vp-num {
@@ -1547,15 +1546,153 @@ h1, h2, h3, h4, h5 {
   .form-card { padding: 24px; }
   .contact-info-card { margin-top: 24px; }
 }
-
+/* ===== MOBILE RESPONSIVE ===== */
 @media (max-width: 575px) {
-  .hero-headline { font-size: 2rem; }
-  .page-hero { padding: 60px 0 40px; }
-  .wa-fab { bottom: 20px; right: 20px; }
-  .wa-popup { width: 270px; }
-  .footer-bottom { flex-direction: column; text-align: center; }
-  .footer-bottom-links { justify-content: center; }
-  .brand-text { display: none; }
+
+  /* Navbar */
+  .navbar-sls .container {
+    padding-left: 8px;
+    padding-right: 8px;
+    flex-wrap: nowrap;
+  }
+
+  .navbar-sls .navbar-brand {
+    gap: 7px;
+    min-width: 0;
+    flex: 1 1 auto;
+    overflow: hidden;
+  }
+
+  .navbar-sls .brand-logo {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+  }
+
+  .navbar-sls .brand-text {
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .navbar-sls .brand-name {
+    font-size: 1rem;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+  }
+
+  .navbar-sls .brand-tagline {
+    font-size: 0.62rem;
+    letter-spacing: 1.2px;
+    white-space: nowrap;
+  }
+
+  .navbar-sls .navbar-toggler {
+    width: 44px;
+    height: 44px;
+    padding: 6px;
+    flex-shrink: 0;
+    margin-left: 6px;
+  }
+
+
+  /* Hero */
+  .hero-section {
+    padding: 65px 0 50px;
+  }
+
+  .hero-headline {
+    font-size: 1.85rem;
+    line-height: 1.12;
+  }
+
+  .hero-sub {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin-bottom: 28px;
+  }
+
+  .hero-section .btn-primary-sls,
+  .hero-section .btn-outline-sls {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+
+  /* Section headings */
+  .section-title {
+    font-size: 1.65rem;
+    line-height: 1.2;
+  }
+
+  .section-lead {
+    font-size: 0.92rem;
+    line-height: 1.65;
+  }
+
+
+  /* Stats */
+  .stats-bar {
+    padding: 22px 0;
+  }
+
+  .stat-item {
+    padding: 14px 10px;
+  }
+
+  .stat-number {
+    font-size: 2.2rem;
+  }
+
+  .stat-label {
+    font-size: 0.72rem;
+    letter-spacing: 1.2px;
+  }
+
+
+  /* Cards */
+  .service-card,
+  .industry-card,
+  .pillar-card {
+    padding: 22px;
+  }
+
+  .service-card p,
+  .industry-card p,
+  .pillar-card p,
+  .why-card p {
+    font-size: 0.84rem;
+  }
+
+
+  /* WhatsApp */
+  .wa-fab {
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .wa-main-btn {
+    width: 52px;
+    height: 52px;
+    font-size: 1.35rem;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .wa-popup {
+    width: min(300px, calc(100vw - 32px));
+    right: -4px;
+  }
+
+
+  /* Footer */
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-bottom-links {
+    justify-content: center;
+  }
 }
 
 /* ===== SCROLL ANIMATION ===== */
