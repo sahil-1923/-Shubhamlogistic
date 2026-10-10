@@ -26,7 +26,7 @@
 
   <link
     rel="canonical"
-    href="https://shubhamlogistics.in/services/container-transportation-services/"
+    href="https://shubhamlogistics.in/services/container-transportation/"
   >
 
   <!-- Bootstrap -->
@@ -864,161 +864,70 @@
     }
 
 
-    /* =========================================================
-       FAQ
-    ========================================================== */
 
 /* =========================================================
    FAQ
 ========================================================== */
 
-.ct-faq-section {
-  padding: 72px 0 78px;
-  background: #fff;
-}
+    /* =========================================================
+       FAQ
+    ========================================================== */
 
-.ct-faq-intro {
-  position: sticky;
-  top: 100px;
-  padding-right: 18px;
-}
+    .lu-faq {
+      padding: 82px 0;
+      background: #fff;
+    }
 
-.ct-faq-intro .ct-section-title {
-  max-width: 450px;
-  margin-bottom: 0;
-  font-size: clamp(2rem, 3vw, 2.65rem);
-  line-height: 1.12;
-}
+    .lu-faq-intro {
+      position: sticky;
+      top: 30px;
+    }
 
-.ct-faq-intro p {
-  max-width: 470px;
-  margin: 0 0 22px;
-  color: var(--ct-text);
-  font-size: 0.88rem;
-  line-height: 1.75;
-}
+    .lu-faq-intro p {
+      color: var(--lu-text);
+      line-height: 1.75;
+    }
 
-.ct-faq-points {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-  margin: 25px 0;
-}
+    .lu-faq .accordion-item {
+      margin-bottom: 10px;
 
-.ct-faq-point {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 12px;
-  border: 1px solid var(--ct-border);
-  border-radius: 6px;
-  background: #f8fafc;
-}
+      overflow: hidden;
 
-.ct-faq-point-icon {
-  flex: 0 0 34px;
-  width: 34px;
-  height: 34px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  background: rgba(245,166,35,0.13);
-  color: var(--ct-orange);
-}
+      border: 1px solid var(--lu-border);
+      border-radius: 5px;
+    }
 
-.ct-faq-point strong {
-  display: block;
-  margin-bottom: 2px;
-  color: var(--ct-heading);
-  font-size: 0.74rem;
-  line-height: 1.3;
-}
+    .lu-faq .accordion-button {
+      padding: 19px 21px;
 
-.ct-faq-point span {
-  display: block;
-  color: var(--ct-text);
-  font-size: 0.67rem;
-  line-height: 1.45;
-}
+      color: var(--lu-heading);
 
-.ct-faq-contact {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  min-height: 45px;
-  padding: 11px 17px;
-  border-radius: 5px;
-  background: var(--ct-orange);
-  color: #0b2037;
-  font-size: 0.78rem;
-  font-weight: 800;
-  text-decoration: none;
-  transition: 0.25s ease;
-}
+      background: #fff;
 
-.ct-faq-contact:hover {
-  color: #0b2037;
-  background: #ffb637;
-  transform: translateY(-1px);
-}
+      font-size: 0.95rem;
+      font-weight: 750;
 
-.ct-faq-contact i {
-  color: #0b2037;
-}
+      box-shadow: none;
+    }
 
+    .lu-faq .accordion-button:not(.collapsed) {
+      color: var(--lu-blue);
+      background: #f7fafc;
+      box-shadow: none;
+    }
 
-/* FAQ accordion */
+    .lu-faq .accordion-button:focus {
+      box-shadow: none;
+      border-color: transparent;
+    }
 
-.ct-faq {
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
-}
+    .lu-faq .accordion-body {
+      padding: 0 48px 20px 21px;
 
-.ct-faq .accordion-item {
-  overflow: hidden;
-  margin: 0;
-  border: 1px solid var(--ct-border);
-  border-radius: 7px !important;
-  background: #fff;
-  transition: border-color 0.2s ease,
-              box-shadow 0.2s ease;
-}
-
-.ct-faq .accordion-item:hover {
-  border-color: #ccd9e3;
-}
-
-.ct-faq .accordion-button {
-  min-height: 60px;
-  padding: 12px 17px 12px 14px;
-  background: #fff;
-  color: var(--ct-heading);
-  box-shadow: none;
-  font-size: 0.81rem;
-  font-weight: 750;
-}
-
-.ct-faq .accordion-button:not(.collapsed) {
-  background: #f7f9fb;
-  color: var(--ct-heading);
-  box-shadow: none;
-}
-
-.ct-faq .accordion-button::after {
-  width: 0.85rem;
-  height: 0.85rem;
-  background-size: 0.85rem;
-}
-
-
-.ct-faq .accordion-body {
-  padding: 0 48px 17px 59px;
-  color: var(--ct-text);
-  font-size: 0.78rem;
-  line-height: 1.7;
-}
+      color: var(--lu-text);
+      font-size: 0.91rem;
+      line-height: 1.75;
+    }
 
 
     /* =========================================================
@@ -1537,8 +1446,7 @@
         </span>
 
         <h1>
-          Container Transport
-          <span>Services in India</span>
+          Container Transport Services
         </h1>
 
         <p class="ct-hero-text">
@@ -2196,9 +2104,8 @@
 
 <section class="ct-section ct-section-light">
 
-  <div class="container">
-
-    <div class="text-center">
+  <div class="container start">
+    
 
       <span class="ct-eyebrow-small">
         Simple Booking Process
@@ -2208,9 +2115,8 @@
         How to Book Container Transport Services
       </h2>
 
-      <div class="ct-divider center"></div>
-
-      <p class="ct-section-lead mx-auto">
+<div class="ct-divider" style="margin-left: 0;"></div>
+      <p class="ct-section-lead" style="max-width: 800px; margin-left: 0; margin-bottom: 40px;">
         Share your shipment details and our team reviews the route,
         container requirements and delivery schedule before arranging
         the movement.
@@ -2766,603 +2672,172 @@
      FAQ
 ========================================================== -->
 
-<section class="ct-faq-section" id="faqs">
+<!-- =========================================================
+     FAQ
+========================================================== -->
 
+<section class="lu-faq" style="padding: 60px 0; background-color: #ffffff;">
   <div class="container">
+    <div class="row g-5" style="display: flex; align-items: stretch;">
 
-    <div class="row g-5 align-items-start">
-
-      <!-- LEFT -->
-
+      <!-- LEFT COLUMN: Intro Text -->
       <div class="col-lg-4">
-
-        <div class="ct-faq-intro">
-
-          <span class="ct-eyebrow-small">
-            Frequently Asked Questions
+        <div class="lu-faq-intro" style="text-align: left;">
+          <span class="lu-eyebrow-small" style="color: #f6ad55; font-weight: bold; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; display: block; margin-bottom: 8px;">
+            FAQs
           </span>
-
-          <h2 class="ct-section-title">
-            Container Transport
-            Questions Answered
+          <h2 class="lu-section-title" style="color: #0f2c59; font-weight: 700; font-size: 2.2rem; line-height: 1.2; margin-bottom: 15px;">
+            Loading &amp; Unloading Services FAQs
           </h2>
-
-          <div class="ct-divider"></div>
-
-          <p>
-            Find clear answers about container transportation, pricing,
-            booking, container sizes, major routes, port movement,
-            CFS/ICD transportation and tracking.
+          <div class="lu-divider" style="width: 50px; height: 3px; background-color: #f6ad55; margin: 15px 0 20px 0;"></div>
+          <p style="color: #64748b; line-height: 1.7; font-size: 1rem;">
+            Find answers to common questions about commercial loading and unloading services, locations, charges and service requirements.
           </p>
-
-
-          <div class="ct-faq-points">
-
-            <div class="ct-faq-point">
-
-              <div class="ct-faq-point-icon">
-                <i class="fas fa-comments"></i>
-              </div>
-
-              <div>
-                <strong>Quick Responses</strong>
-                <span>
-                  Get answers to common container transport questions.
-                </span>
-              </div>
-
-            </div>
-
-
-            <div class="ct-faq-point">
-
-              <div class="ct-faq-point-icon">
-                <i class="fas fa-file-lines"></i>
-              </div>
-
-              <div>
-                <strong>Clear Information</strong>
-                <span>
-                  Understand pricing, booking and service requirements.
-                </span>
-              </div>
-
-            </div>
-
-
-            <div class="ct-faq-point">
-
-              <div class="ct-faq-point-icon">
-                <i class="fas fa-route"></i>
-              </div>
-
-              <div>
-                <strong>Route Details</strong>
-                <span>
-                  Learn about major ports, CFSs, ICDs and routes.
-                </span>
-              </div>
-
-            </div>
-
-
-            <div class="ct-faq-point">
-
-              <div class="ct-faq-point-icon">
-                <i class="fas fa-headset"></i>
-              </div>
-
-              <div>
-                <strong>Support</strong>
-                <span>
-                  Contact our team for shipment-specific information.
-                </span>
-              </div>
-
-            </div>
-
-          </div>
-
-
-          <a
-            href="../../contact.html"
-            class="ct-faq-contact"
-          >
-            Need a container transport quote?
-            <i class="fas fa-arrow-right"></i>
-          </a>
-
         </div>
-
       </div>
 
-
-      <!-- RIGHT -->
-
+      <!-- RIGHT COLUMN: Accordion Panels -->
       <div class="col-lg-8">
-
-        <div
-          class="accordion ct-faq"
-          id="containerFaq"
-        >
-
+        <div class="accordion" id="ContainerTransportationFaq">
 
           <!-- FAQ 1 -->
-
-          <div class="accordion-item">
-
-            <h3 class="accordion-header">
-
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faqOne"
-                aria-expanded="true"
-                aria-controls="faqOne"
-              >
-
-
+          <div class="accordion-item mb-3" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+            <h3 class="accordion-header" style="margin: 0;">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne" style="background-color: #f8fafc; color: #0f2c59; font-weight: 600; padding: 18px 20px; font-size: 1.05rem;">
                 What are container transport services?
-
               </button>
-
             </h3>
-
-            <div
-              id="faqOne"
-              class="accordion-collapse collapse show"
-              data-bs-parent="#containerFaq"
-            >
-
-              <div class="accordion-body">
-                Container transport services move shipping containers by
-                road between ports, factories, warehouses, CFSs and ICDs.
-                The service supports import and export cargo, including
-                port-to-factory, port-to-warehouse, factory-to-port and
-                CFS/ICD container movements.
+            <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#ContainerTransportationFaq">
+              <div class="accordion-body" style="padding: 20px; color: #475569; line-height: 1.7; font-size: 0.95rem; border-top: 1px solid #e2e8f0; text-align: left;">
+                Container transport services move shipping containers by road between ports, factories, warehouses, CFSs and ICDs. The service supports import and export cargo, including port-to-factory, port-to-warehouse, factory-to-port and CFS/ICD container movements.
               </div>
-
             </div>
-
           </div>
-
 
           <!-- FAQ 2 -->
-
-          <div class="accordion-item">
-
-            <h3 class="accordion-header">
-
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faqTwo"
-                aria-expanded="false"
-                aria-controls="faqTwo"
-              >
-
-
-
+          <div class="accordion-item mb-3" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+            <h3 class="accordion-header" style="margin: 0;">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo" style="background-color: #ffffff; color: #0f2c59; font-weight: 600; padding: 18px 20px; font-size: 1.05rem;">
                 How much does container transport cost in India?
-
               </button>
-
             </h3>
-
-            <div
-              id="faqTwo"
-              class="accordion-collapse collapse"
-              data-bs-parent="#containerFaq"
-            >
-
-              <div class="accordion-body">
-                Container transport cost depends on the pickup location,
-                delivery destination, road distance, 20ft or 40ft container
-                size, loaded or empty movement, and loading or unloading
-                requirements. Share these details to get a route-specific
-                transport quote.
+            <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#ContainerTransportationFaq">
+              <div class="accordion-body" style="padding: 20px; color: #475569; line-height: 1.7; font-size: 0.95rem; border-top: 1px solid #e2e8f0; text-align: left;">
+                Container transport cost depends on the pickup location, delivery destination, road distance, 20ft or 40ft container size, loaded or empty movement, and loading or unloading requirements. Share these details to get a route-specific transport quote.
               </div>
-
             </div>
-
           </div>
-
 
           <!-- FAQ 3 -->
-
-          <div class="accordion-item">
-
-            <h3 class="accordion-header">
-
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faqThree"
-                aria-expanded="false"
-                aria-controls="faqThree"
-              >
-
-
+          <div class="accordion-item mb-3" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+            <h3 class="accordion-header" style="margin: 0;">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree" style="background-color: #ffffff; color: #0f2c59; font-weight: 600; padding: 18px 20px; font-size: 1.05rem;">
                 How do I book container transport services?
-
               </button>
-
             </h3>
-
-            <div
-              id="faqThree"
-              class="accordion-collapse collapse"
-              data-bs-parent="#containerFaq"
-            >
-
-              <div class="accordion-body">
-                Share the pickup location, delivery destination, container
-                size, cargo type and preferred pickup date with Shubham
-                Logistics Services. The team reviews the route and provides
-                a transport quote based on the required container movement.
+            <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#ContainerTransportationFaq">
+              <div class="accordion-body" style="padding: 20px; color: #475569; line-height: 1.7; font-size: 0.95rem; border-top: 1px solid #e2e8f0; text-align: left;">
+                Share the pickup location, delivery destination, container size, cargo type and preferred pickup date with Shubham Logistics Services. The team reviews the route and provides a transport quote based on the required container movement.
               </div>
-
             </div>
-
           </div>
-
 
           <!-- FAQ 4 -->
-
-          <div class="accordion-item">
-
-            <h3 class="accordion-header">
-
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faqFour"
-                aria-expanded="false"
-                aria-controls="faqFour"
-              >
-
-
-
+          <div class="accordion-item mb-3" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+            <h3 class="accordion-header" style="margin: 0;">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour" style="background-color: #ffffff; color: #0f2c59; font-weight: 600; padding: 18px 20px; font-size: 1.05rem;">
                 Do you provide 20ft container transport?
-
               </button>
-
             </h3>
-
-            <div
-              id="faqFour"
-              class="accordion-collapse collapse"
-              data-bs-parent="#containerFaq"
-            >
-
-              <div class="accordion-body">
-                Yes. Road transportation is available for 20ft containers
-                used for import and export cargo. Containers can be moved
-                between ports, factories, warehouses, CFSs and ICDs according
-                to the specified pickup and delivery locations.
+            <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#ContainerTransportationFaq">
+              <div class="accordion-body" style="padding: 20px; color: #475569; line-height: 1.7; font-size: 0.95rem; border-top: 1px solid #e2e8f0; text-align: left;">
+                Yes. Road transportation is available for 20ft containers used for import and export cargo. Containers can be moved between ports, factories, warehouses, CFSs and ICDs according to the specified pickup and delivery locations.
               </div>
-
             </div>
-
           </div>
-
 
           <!-- FAQ 5 -->
-
-          <div class="accordion-item">
-
-            <h3 class="accordion-header">
-
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faqFive"
-                aria-expanded="false"
-                aria-controls="faqFive"
-              >
-
-
-
+          <div class="accordion-item mb-3" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+            <h3 class="accordion-header" style="margin: 0;">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="false" aria-controls="faqFive" style="background-color: #ffffff; color: #0f2c59; font-weight: 600; padding: 18px 20px; font-size: 1.05rem;">
                 Do you provide 40ft container transport?
-
               </button>
-
             </h3>
-
-            <div
-              id="faqFive"
-              class="accordion-collapse collapse"
-              data-bs-parent="#containerFaq"
-            >
-
-              <div class="accordion-body">
-                Yes. 40ft container transportation is available for import
-                and export shipments. Transportation can be arranged between
-                the required pickup and delivery locations according to the
-                route, container size and delivery schedule.
+            <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#ContainerTransportationFaq">
+              <div class="accordion-body" style="padding: 20px; color: #475569; line-height: 1.7; font-size: 0.95rem; border-top: 1px solid #e2e8f0; text-align: left;">
+                Yes. 40ft container transportation is available for import and export shipments. Transportation can be arranged between the required pickup and delivery locations according to the route, container size and delivery schedule.
               </div>
-
             </div>
-
           </div>
-
 
           <!-- FAQ 6 -->
-
-          <div class="accordion-item">
-
-            <h3 class="accordion-header">
-
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faqSix"
-                aria-expanded="false"
-                aria-controls="faqSix"
-              >
-
-
-
+          <div class="accordion-item mb-3" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+            <h3 class="accordion-header" style="margin: 0;">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqSix" aria-expanded="false" aria-controls="faqSix" style="background-color: #ffffff; color: #0f2c59; font-weight: 600; padding: 18px 20px; font-size: 1.05rem;">
                 Can you transport containers from a port to a factory?
-
               </button>
-
             </h3>
-
-            <div
-              id="faqSix"
-              class="accordion-collapse collapse"
-              data-bs-parent="#containerFaq"
-            >
-
-              <div class="accordion-body">
-                Yes. Port-to-factory transportation moves loaded import
-                containers from the designated port directly to the specified
-                factory.
+            <div id="faqSix" class="accordion-collapse collapse" data-bs-parent="#ContainerTransportationFaq">
+              <div class="accordion-body" style="padding: 20px; color: #475569; line-height: 1.7; font-size: 0.95rem; border-top: 1px solid #e2e8f0; text-align: left;">
+                Yes. Port-to-factory transportation moves loaded import containers from the designated port directly to the specified factory.
               </div>
-
             </div>
-
           </div>
-
 
           <!-- FAQ 7 -->
-
-          <div class="accordion-item">
-
-            <h3 class="accordion-header">
-
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faqSeven"
-                aria-expanded="false"
-                aria-controls="faqSeven"
-              >
-
-
-
+          <div class="accordion-item mb-3" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+            <h3 class="accordion-header" style="margin: 0;">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqSeven" aria-expanded="false" aria-controls="faqSeven" style="background-color: #ffffff; color: #0f2c59; font-weight: 600; padding: 18px 20px; font-size: 1.05rem;">
                 Can you transport containers from a factory to a port?
-
               </button>
-
             </h3>
-
-            <div
-              id="faqSeven"
-              class="accordion-collapse collapse"
-              data-bs-parent="#containerFaq"
-            >
-
-              <div class="accordion-body">
-                Yes. Factory-to-port transportation moves loaded export
-                containers from the factory to the required port.
+            <div id="faqSeven" class="accordion-collapse collapse" data-bs-parent="#ContainerTransportationFaq">
+              <div class="accordion-body" style="padding: 20px; color: #475569; line-height: 1.7; font-size: 0.95rem; border-top: 1px solid #e2e8f0; text-align: left;">
+                Yes. Factory-to-port transportation moves loaded export containers from the factory to the required port.
               </div>
-
             </div>
-
           </div>
 
 
-          <!-- FAQ 8 -->
-
-          <div class="accordion-item">
-
-            <h3 class="accordion-header">
-
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faqEight"
-                aria-expanded="false"
-                aria-controls="faqEight"
-              >
-
-
-
-                Can you transport containers from a port to a warehouse?
-
+           <!-- FAQ 8 -->
+          <div class="accordion-item mb-3" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+            <h3 class="accordion-header" style="margin: 0;">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqEight" aria-expanded="false" aria-controls="faqEight" style="background-color: #ffffff; color: #0f2c59; font-weight: 600; padding: 18px 20px; font-size: 1.05rem;">
+                What details are needed for a transportation quote?
               </button>
-
             </h3>
-
-            <div
-              id="faqEight"
-              class="accordion-collapse collapse"
-              data-bs-parent="#containerFaq"
-            >
-
-              <div class="accordion-body">
-                Yes. Import containers can be transported from the port to
-                a specified warehouse or storage facility.
+            <div id="faqEight" class="accordion-collapse collapse" data-bs-parent="#ContainerTransportationFaq">
+              <div class="accordion-body" style="padding: 20px; color: #475569; line-height: 1.7; font-size: 0.95rem; border-top: 1px solid #e2e8f0; text-align: left;">
+                To provide an accurate quote, we need the exact pickup and delivery drop locations, container sizes (20ft/40ft), estimated cargo weight, specific handling requirements, and your preferred schedule timelines.
               </div>
-
             </div>
-
           </div>
-
 
           <!-- FAQ 9 -->
-
-          <div class="accordion-item">
-
-            <h3 class="accordion-header">
-
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faqNine"
-                aria-expanded="false"
-                aria-controls="faqNine"
-              >
-
-
-
-                Can you transport containers between ports, CFSs and ICDs?
-
+          <div class="accordion-item mb-3" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+            <h3 class="accordion-header" style="margin: 0;">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqNine" aria-expanded="false" aria-controls="faqNine" style="background-color: #ffffff; color: #0f2c59; font-weight: 600; padding: 18px 20px; font-size: 1.05rem;">
+                Are your cargo vehicle movements tracked?
               </button>
-
             </h3>
-
-            <div
-              id="faqNine"
-              class="accordion-collapse collapse"
-              data-bs-parent="#containerFaq"
-            >
-
-              <div class="accordion-body">
-                Yes. Container transportation can be arranged between ports,
-                Container Freight Stations and Inland Container Depots for
-                import and export cargo.
+            <div id="faqNine" class="accordion-collapse collapse" data-bs-parent="#ContainerTransportationFaq">
+              <div class="accordion-body" style="padding: 20px; color: #475569; line-height: 1.7; font-size: 0.95rem; border-top: 1px solid #e2e8f0; text-align: left;">
+                Yes. All fleet vehicles handling commercial movements come fully equipped with active GPS tracking systems to offer complete transit visibility and regular delivery schedule updates.
               </div>
-
             </div>
-
           </div>
-
 
           <!-- FAQ 10 -->
-
-          <div class="accordion-item">
-
-            <h3 class="accordion-header">
-
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faqTen"
-                aria-expanded="false"
-                aria-controls="faqTen"
-              >
-
-
-
-                Do you transport empty containers?
-
+          <div class="accordion-item mb-3" style="border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+            <h3 class="accordion-header" style="margin: 0;">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTen" aria-expanded="false" aria-controls="faqTen" style="background-color: #ffffff; color: #0f2c59; font-weight: 600; padding: 18px 20px; font-size: 1.05rem;">
+                Do you assist with port documentation?
               </button>
-
             </h3>
-
-            <div
-              id="faqTen"
-              class="accordion-collapse collapse"
-              data-bs-parent="#containerFaq"
-            >
-
-              <div class="accordion-body">
-                Yes. Empty containers can be picked up from one specified
-                location and delivered to another agreed location.
+            <div id="faqTen" class="accordion-collapse collapse" data-bs-parent="#ContainerTransportationFaq">
+              <div class="accordion-body" style="padding: 20px; color: #475569; line-height: 1.7; font-size: 0.95rem; border-top: 1px solid #e2e8f0; text-align: left;">
+                Shubham Logistics coordinates transportation directly alongside port operations, CFS, and ICD authorities to ensure container movement complies perfectly with handling schedules.
               </div>
-
-            </div>
-
-          </div>
-
-
-          <!-- FAQ 11 -->
-
-          <div class="accordion-item">
-
-            <h3 class="accordion-header">
-
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faqEleven"
-                aria-expanded="false"
-                aria-controls="faqEleven"
-              >
-
-
-
-                Which container transport routes does Shubham Logistics Services cover?
-
-              </button>
-
-            </h3>
-
-            <div
-              id="faqEleven"
-              class="accordion-collapse collapse"
-              data-bs-parent="#containerFaq"
-            >
-
-              <div class="accordion-body">
-                Listed routes include Hyderabad–Mumbai, Vizag–Hyderabad,
-                Hyderabad–Chennai, Chennai–Bangalore, Ahmedabad–Mumbai,
-                Delhi–Mumbai, Delhi–Jaipur–Ahmedabad and Pune–Mumbai.
-              </div>
-
-            </div>
-
-          </div>
-
-
-          <!-- FAQ 12 -->
-
-          <div class="accordion-item">
-
-            <h3 class="accordion-header">
-
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faqTwelve"
-                aria-expanded="false"
-                aria-controls="faqTwelve"
-              >
-
-
-                Can I track my container during transportation?
-
-              </button>
-
-            </h3>
-
-            <div
-              id="faqTwelve"
-              class="accordion-collapse collapse"
-              data-bs-parent="#containerFaq"
-            >
-
-              <div class="accordion-body">
-                Yes. GPS-enabled vehicle tracking is used during road
-                transportation to monitor the vehicle carrying the container.
-              </div>
-
-            </div>
 
           </div>
 
@@ -3550,7 +3025,7 @@
         <ul class="footer-links">
 
           <li>
-            <a href="index.html">
+            <a href="https://shubhamlogistics.in/services/container-transportation-services/" class="...">
               <i class="fas fa-chevron-right"></i>
               Container Transport
             </a>
